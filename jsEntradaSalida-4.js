@@ -4,8 +4,9 @@
 */
 function mostrar()
 {
-	document.getElementById("demo");
-
-
-
+	var nombre = prompt("nombre y apellido")
+	elNombre.value = nombre
+	
+	
 }
+
