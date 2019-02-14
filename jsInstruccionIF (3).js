@@ -10,11 +10,14 @@ function mostrar()
 	{
 		alert("usted es mayor de edad")
 
-		else
+	}	else
 		{
 			alert("usted es menor de edad")
 		}
 
-	}
+	
 
 }//FIN DE LA FUNCIÓN
+
+
+//este esta mal//

@@ -27,8 +27,5 @@ var años;
 
 		}
 
-	
-
-
 
 }//FIN DE LA FUNCIÓN
