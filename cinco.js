@@ -1,22 +1,61 @@
 function mostrar()
+
 {
-	var planetaSistemaSolar;
-	var mensaje;
-	planetaSistemaSolar= prompt("ingrese el nombre de un planeta dentros del sistema solar","escribe el planeta aqui");
+	var paquetesPaypal;
+	var paqueteEfectvo;
+	var formaDePago;
+	var descuento;
+	var aumento;
+	var valorHabitacion
+	var precioFinal;
 
+	valorHabitacion= prompt("ingrese el valor que tiene su habitacion");
+	formaDePago= prompt("ingrese su forma de pago","ejemplo: efectivo");
 
-	switch(planetaSistemaSolar)
+	switch(formaDePago)
 	{
-		case"mercurio":
-		case"venus":
-			mensaje="acá hace más calor"
+		case"trajeta Visa":
+			descuento=10
 			break;
-		case"tierra":
-			mensaje="acá vivimos"
+		case"paypal":
+			descuento=15
 			break;
-		default:
-			mensaje="acá hace más frio"	
+
+			switch(paquetesPaypal)
+			{
+				case"todoIncluido":
+					descuento=10
+					break;
+			}
+
+		case"mercado Pago":
+			descuento=10
+		case"efectivo":
+			descuento=20
+			break;
+
+			switch(paqueteEfectvo)
+			{
+				case"solo desayuno":
+					aumento=10
+					
+					break;
+				case"todo Incluido":
+					descuento=15
+					break;
+			}	
+
+		case"otro":
+			*5/100
+			break;
+
 	}
 
-	alert(mensaje);
+	precioFinal= valorHabitacion*descuento/100
+	precioFinal valorHabitacion
+
+	precioFinal= valorHabitacion*aumento/100
+	precioFinal= valorHabitacion + aumento
+
+
 }
