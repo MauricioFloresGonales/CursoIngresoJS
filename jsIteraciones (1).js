@@ -1,16 +1,23 @@
 function mostrar()
-/*toda interaccion tiene un comienzo, un recorrido y
-una accion que marca su final*/
+/*al presionar el botón mostrar 10
+repeticiones con números ASCENDENTE, 
+desde el 1 al 10.*/
 {
-	alert('iteración while');
+	//alert('iteración while');
 
-	var contador= 0;
+	var i;
+	i=0;
 
-	while(contador<10)
+	while(i < 10)
 	{
-		//console.log(contador);
-		contador= contador + 1;
-		console.log(contador);
+		//alert(i);
+		document.write(i + "<br>")
+
+		i = i + 1;
 	}
+
+
+
+
 
 }//FIN DE LA FUNCIÓN
