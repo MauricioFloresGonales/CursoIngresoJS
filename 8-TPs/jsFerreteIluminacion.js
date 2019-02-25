@@ -10,5 +10,101 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+	var cantidad;
+ 	var marca;
+ 	var porcentajeDescuento;
+ 	var totalBruto;
+ 	var totalConDescuento=0;
+ 	var IIBB = 0;
+
+ 	cantidad= document.getElementById('Cantidad').value;
+ 	marca= document.getElementById('Marca').value;
+ 	cantidad= parseInt(cantidad);
+
+ 	totalBruto= cantidad*35;
+
+	/*switch(cantidad)
+	{
+		case 5:
+			if(cantidad==5)
+	 		{
+	 			if(marca=="ArgentinaLuz")
+	 			{
+	 				porcentajeDescuento= 0.4
+	 			}else{
+	 				porcentajeDescuento=0.3
+	 			}
+	 		}
+		break;
+		case 4:
+			if(cantidad==4)
+ 			{
+ 				if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+ 				{
+ 					porcentajeDescuento= 0.25;
+ 				}else{
+ 					porcentajeDescuento=0.20;
+ 				}
+ 			}
+		break;
+		case 3:
+ 				if(marca=="FelipeLamparas")
+ 				{
+ 					porcentajeDescuento=0.1;
+ 				}else{
+ 					porcentajeDescuento= 0.05
+ 				}
+ 		break;
+ 		default:
+		 		if(cantidad>=6)
+		 	{
+		 		porcentajeDescuento= 0.5;
+		 	}
+	}*/
+
+ 	if(cantidad>=6)
+ 	{
+ 		porcentajeDescuento= 0.5;
+ 	}else{
+
+ 		if(cantidad==5)
+ 		{
+ 			if(marca=="ArgentinaLuz")
+ 			{
+ 				porcentajeDescuento= 0.4
+ 			}else{
+				porcentajeDescuento=0.3
+ 			} 			
+ 		}else{
+
+ 			if(cantidad==4)
+ 			{
+ 				if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+ 				{
+ 					porcentajeDescuento= 0.25;
+ 				}else{
+ 					porcentajeDescuento=0.20;
+ 				}
+ 			}else{
+
+ 				if(marca=="FelipeLamparas")
+ 				{
+ 					porcentajeDescuento=0.1;
+ 				}else{
+ 					porcentajeDescuento= 0.05
+ 				}//if(marca=="FelipeLamparas")
+ 			}//if(cantidad==4)
+ 		}//if(cantidad==5)
+ 	}//if(cantidad>=6)*/
+
+ 	totalConDescuento= totalBruto -(totalBruto * porcentajeDescuento);
+
+ 	document.getElementById('precioDescuento').value= totalConDescuento;
+
+ 	if(totalConDescuento>120)
+ 	{
+ 		IIBB= (totalConDescuento *0.1);
+ 		alert("Usted pago " + IIBB + " de IIBB");
+ 	}
+ 	//me dio mal el resultado de un sola compra me tiene que dar solo $35 	
 }
