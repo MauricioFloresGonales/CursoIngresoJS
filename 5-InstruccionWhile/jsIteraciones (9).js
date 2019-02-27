@@ -92,6 +92,7 @@ function mostrar()
 			}//if(flag == false || numero < minimo)
 		}//if(flag == false|| numero > maximo)
 		respuesta=prompt("desea continuar?")
+		
 	}
 
 	document.getElementById('maximo').value = maximo;

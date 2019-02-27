@@ -8,7 +8,7 @@ function mostrar()
 	var acumulador=0;
 	var respuesta='si';
 	var numeroIngresado;
-     //hile(respuesta== "si")
+     //while(respuesta== "si")
 	while(respuesta)
 	{
 		numeroIngresado=prompt("ingre su numero");
