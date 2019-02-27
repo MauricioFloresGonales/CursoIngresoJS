@@ -6,9 +6,9 @@ desde el 1 al 10.*/
 	/*alert('iteración while');*/
 
 	var i;
-	i=0;
+	i=1;
 
-	while(i < 10)
+	while(i <= 10)
 	{
 		//alert(i);
 		document.write(i + "<br>")
