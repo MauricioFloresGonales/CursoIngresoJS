@@ -11,5 +11,5 @@ function mostrar()
 
 	}
 
-	alert("usted ingreso un numero entre el 0 y el 10");
+	alert("usted ingreso un numero entre el 0 y el 9");
 }//FIN DE LA FUNCIÓN

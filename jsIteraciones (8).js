@@ -3,7 +3,7 @@ function mostrar()
 
 	var contador=0;
 	var positivo=0;
-	var negativo=1;
+	var numNegativo=1;
 	var respuesta='si';
 	var numeroPositivo;
 	var numeroNegativo;
@@ -48,12 +48,13 @@ while(respuesta)
 	}
 	if(numeroNegativo < 0)
 	{
-		negativo= negativo + numeroNegativo;
-		negativo= numeroNegativo * contador;
+		numNegativo= numNegativo + numeroNegativo;
+		negativo= numNegativo * contador;
 	}
 
 	contador= contador + 1 ;
 	
+
 	respuesta= confirm("desea continuar?");
 }
 
