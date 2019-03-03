@@ -1,71 +1,39 @@
 function mostrar()
-/*-ingresar cuatro importes 
--mostrar el mayor
--despues motrar cual es el total 
--si supera 100p hacer el descuento del 10%
--si supera los 50p el descuento es de 5%
--en el caso de ser menos de 50 descontar 15%
-*/
 {
-	var importeUno;
-	var importeDos;
-	var imporTres;
-	var imporCuatro;
-	var suma;
-	var resultadoFinal;
+	var numeroUno;
+	var numeroDos;
 	var mensaje;
-	var importeMayor;
-	
+	var resta;
+	var suma;
 
-	importeUno= prompt("ingrese un importe","aqui");
-	importeUno= parseInt(importeUno);
-	importeDos= prompt("ingrese su segundo importe","aqui");
-	importeDos= parseInt(importeDos);
-	importeTres= prompt("ingrese su tercer importe", "aqui");
-	importeTres= parseInt(importeTres);
-	importeCuatro= prompt("ingrese su cuarto importe","aqui");
-	importeCuatro= parseInt(importeCuatro);
+	numeroUno = prompt("ingrese un numero");
+	numeroUno= parseInt(numeroUno);
+	numeroDos = prompt("ingrese otro numero");
+	numeroDos= parseInt(numeroDos);
 
-	importes=importeUno
-	importes=importeDos
-	importes=importeTres
-	importes=imporCuatro
-
-	if(iporete>importeUno && importe<imporCuatro)
+	if(numeroUno == numeroDos)
 	{
-		alert("bien");
-	}
-
-
-	
-
-/*suma= importeUno + importeDos + importeTres + importeCuatro
-		
-		console.log(suma);
-
-	if(suma>=100)
-	{
-		descuento=suma*10/100
-		resultadoFinal= suma - descuento
-		mensaje= "resultadoFinal"
+		mensaje =(numeroUno + " y " + numeroDos); 
 	}else{
-
-		if(suma>=50 && suma<100)
+		if(numeroUno>numeroDos)
 		{
-			descuento= suma*5/100
-			resultadoFinal= suma - descuento
-			mensaje= "resultadoFinal"
-		}else{
-			if(suma<50)
-			{
-				descuento=suma*15/100
-				resultadoFinal= suma - descuento
-				mensaje= "resultadoFinal"
-			}//if(suma<50)
-		}//if(suma>=50 && suma<100)
-	}//if(suma>=100)
-	
-	alert(resultadoFinal);
-*/
+			resta = numeroUno - numeroDos;
 
+			mensaje = ("la resta es " + resta);
+		}else{
+
+			suma = numeroUno + numeroDos;
+
+			mensaje= ("la suma es " + suma);
+
+			if(suma>=11)
+			{
+				mensaje=("la suma es " + suma + " y supero el 10");
+			}
+
+		}//if(numeroUno>numeroDos)
+
+	}//if(numeroUno == numeroDos)
+
+	alert(mensaje);
 }
