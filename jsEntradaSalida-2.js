@@ -2,9 +2,18 @@
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	//var = variabble donde gguarda informacion (define que contiene tal informacion)
-	var nombre = prompt("Por favor escriba su nombre y apellido", "nombre y apellido");
-    alert(nombre);
-   
+	var nombreIngresado;
+	
+	nombreIngresado= prompt("su edad es ?", "ingrese su edad aqui.");
+	
+	while(isNaN(nombreIngresado)==false)
+	{
+		nombreIngresado = prompt("error");
+	}
+
+
+	alert("su nombre es " + nombreIngresado);
+
+
 }
 

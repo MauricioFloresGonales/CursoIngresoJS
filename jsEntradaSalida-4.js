@@ -4,9 +4,12 @@
 */
 function mostrar()
 {
-	var nombre = prompt("nombre y apellido")
-	elNombre.value = nombre
-	
-	
+	var nombreIngresado;
+
+	nombreIngresado= prompt("ingrese su nombre", "aquí...");
+
+	document.getElementById('elNombre').value =nombreIngresado;
+
+
 }
 

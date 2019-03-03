@@ -4,23 +4,16 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	/*primer comando de consola*/
-	var ingreseElAporte;
-	var aumento;
-	var resultadoAumentado
+	var importeIngresado;
+	var resultado;
+	var descuento;
 
-	ingreseElAporte= importe.value;
-	ingreseElAporte= parseInt(ingreseElAporte);
-	resultadoAumentado= ingreseElAporte/10/100;
-	resultado.value= resultadoAumentado
+	importeIngresado = document.getElementById('importe').value;
+	importeIngresado = parseInt(importeIngresado);
 
+	descuento = importeIngresado *0.25;
 
+	resultado = importeIngresado - descuento;
 
-
-
-
-
-
-
-
+	document.getElementById('resultado').value = resultado;
 }

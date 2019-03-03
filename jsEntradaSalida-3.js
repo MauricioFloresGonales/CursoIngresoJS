@@ -2,7 +2,12 @@
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	var nombre = elNombre.value
-	alert(nombre) 
+	var nombreIngresado;
+
+	nombreIngresado = document.getElementById('elNombre').value;
+
+	alert("iusted se llama " + nombreIngresado);
+
 }
+
 
