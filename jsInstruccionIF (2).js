@@ -10,7 +10,7 @@ function mostrar()
 	{
 		alert("usted es mayor de edad");
 	}
-
+//lalala
 
 
 }//FIN DE LA FUNCIÓN
